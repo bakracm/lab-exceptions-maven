@@ -4,8 +4,8 @@ package edu.grinnell.csc207.util;
  * Quadratic expressions (of the form ax^2 + bx + c).
  *
  * @author Samuel A. Rebelsky
- * @author YOUR NAME HERE
- * @author YOUR NAME HERE
+ * @author Anthony Castleberry
+ * @author Mina Bakrac
  */
 public class Quadratic {
   // +--------+------------------------------------------------------

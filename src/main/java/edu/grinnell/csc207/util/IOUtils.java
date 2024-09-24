@@ -7,8 +7,8 @@ import java.io.PrintWriter;
  * A simple set of utilities for dealing with input and output.
  *
  * @author Samuel A. Rebelsky
- * @author Your Name Here
- * @author Your Name Here
+ * @author Mina Bakrac
+ * @author Anthony Castleberry
  */
 public class IOUtils {
   /**
@@ -25,12 +25,16 @@ public class IOUtils {
    *   The integer read.
    */
   public static int readInt(PrintWriter pw, BufferedReader br, String prompt)
-      throws Exception {
+      {
     if (prompt != null) {
       pw.print(prompt);
       pw.flush();
     } // if there is a prompt
-    String response = br.readLine();
-    return Integer.parseInt(response);
+    try {
+      String response = br.readLine();
+      return Integer.parseInt(response);
+    } catch (Exception e) {
+      return Integer.MIN_VALUE;
+    } // Reading/parsing fails.
   } // readInt
 } // class IOUtils

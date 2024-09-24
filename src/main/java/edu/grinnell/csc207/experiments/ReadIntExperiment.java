@@ -11,8 +11,8 @@ import java.io.PrintWriter;
  * PITA for I/O.)
  *
  * @author Samuel A. Rebelsky
- * @author Your Name Here
- * @author Your Name Here
+ * @author Mina Bakrac
+ * @author Anthony Castleberry
  */
 public class ReadIntExperiment {
   /**
@@ -23,7 +23,7 @@ public class ReadIntExperiment {
    *
    * @throws Exception when something goes wrong.
    */
-  public static void main(String[] args) throws Exception {
+  public static void main(String[] args) throws Exception{
     PrintWriter pen = new PrintWriter(System.out, true);
     BufferedReader eyes = new BufferedReader(new InputStreamReader(System.in));
 
