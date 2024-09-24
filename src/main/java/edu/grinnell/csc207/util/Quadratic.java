@@ -1,5 +1,7 @@
 package edu.grinnell.csc207.util;
 
+import java.lang.Math;
+
 /**
  * Quadratic expressions (of the form ax^2 + bx + c).
  *
@@ -95,7 +97,7 @@ public class Quadratic {
    *   is only one).
    */
   public double smallerRoot() {
-    return 0.0; // STUB
+    return ((-1) * this.b - (java.lang.Math.sqrt( this.b * this.b - (4 * this.a * this.c))));
   } // smallerRoot
 
   /**
