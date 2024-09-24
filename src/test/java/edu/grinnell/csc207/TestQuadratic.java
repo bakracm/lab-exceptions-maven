@@ -35,4 +35,31 @@ public class TestQuadratic {
         "The smaller root of x^2 - 3x is 0");
   } // testRootsNoC()
 
+    /**
+   * Quadratic expressions with same roots
+   */
+  @Test
+  public void testRootSame() {
+    assertEquals(2, (new Quadratic(1, 4, 4)).smallerRoot(), 0.001,
+        "The smaller root of x^2 + 4x + 4 is 2");
+  } // testRootSame()
+
+  /**
+   * Quadratic expressions negative root
+   */
+  @Test
+  public void testRootNeg() {
+    assertEquals(-1, (new Quadratic(1, -4, -2)).smallerRoot(), 0.001,
+        "The smaller root of x^2 - 4x -2 is -1");
+  } // testRootNeg()
+
+  /**
+   * Quadratic expressions all zeros
+   */
+  @Test
+  public void testRootZero() {
+    assertEquals(0, (new Quadratic(0, 0, 0)).smallerRoot(), 0.001,
+        "The smaller root of 0x^2 + 0x + 0 is 0");
+  } // testRootZero()
+
 } // class TestQuadratic
